@@ -83,10 +83,8 @@ window.addEventListener("DOMContentLoaded",()=>{
     let oldItems=JSON.parse(localStorage.getItem("itemsArray")) || [];
 
     oldItems.forEach(item => {
-        
-        if(item.name===name){
         let type=item.type;
         appendMessage(item,type)
-        }
+
     });
 })
