@@ -1,0 +1,147 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.89);
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.spacer {
+  display: block;
+  margin: auto;
+  width: 85%;
+  height: 100%;
+  display: flex;
+}
+
+.message-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-container .message-head {
+  position: relative;
+  height: 8vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.171);
+  box-shadow: 0 1px 20px rgba(151, 28, 189, 0.2);
+}
+
+.message-container .message-head .spacer {
+  align-items: center;
+}
+
+.message-container .message-head .spacer .logo {
+  width: 2rem;
+  margin-right: 0.4rem;
+}
+
+.message-container .message-head .spacer h4 {
+  font-family: cursive;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #9c2ea7;
+}
+
+.message-container .message-body {
+  position: relative;
+  height: 84vh;
+  padding: 0.5rem 0 0.5rem;
+}
+
+.message-container .message-body .spacer {
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.message-container .message-body .spacer .message {
+  margin-bottom: 0.3rem;
+}
+
+.message-container .message-body .spacer .message .user-name {
+  font-family: cursive;
+  color: #9c2ea7;
+  letter-spacing: 1px;
+}
+
+.message-container .message-body .spacer .message p {
+  display: inline-block;
+  background: rgba(151, 28, 189, 0.75);
+  max-width: 80%;
+  padding: 0.625rem;
+  border-radius: 9px;
+  border-top-left-radius: 0;
+  color: #eee;
+  letter-spacing: 0.65px;
+  line-height: 1.3;
+}
+
+.message-container .message-body .spacer .message.outgoing {
+  text-align: right;
+}
+
+.message-container .message-body .spacer .message.outgoing .user-name {
+  text-align: right;
+}
+
+.message-container .message-body .spacer .message.outgoing p {
+  right: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 9px;
+  background: rgba(151, 28, 189, 0.4);
+  color: eee;
+}
+.text-container{
+  margin-top: -5px;
+  height: 8vh;
+}
+.text-container .spacer textarea{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: #eee;
+    padding: 5px 10px;
+    outline: none;
+}
+.text-container .spacer button{
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    border: none;
+    background: #eee;
+    padding: 5px;
+    outline: none;
+    transition: 0.5s ease;
+}
+.text-container .spacer button .fas{
+  font-size:22px;
+  color: #9c2ea7;
+}
+.text-container .spacer button:active .fas{
+  transform: scale(0.95);
+}
+.text-container .spacer button:hover{
+  background: #9c2ea7;
+  cursor: pointer;
+}
+.text-container .spacer button:hover .fas{
+  color: #eee;
+}

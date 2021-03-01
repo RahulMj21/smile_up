@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/purple.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Smile Up</title>
+  </head>
+  <body>
+    <div class="message-container">
+
+
+      <div class="message-head">
+        <div class="spacer">
+          <div class="logo">
+            <img src="./images/purple.png" alt="logo" />
+          </div>
+          <h4>Smile Up</h4>
+        </div>
+      </div>
+
+      <div class="message-body">
+        <div class="spacer" id="add-message">
+          <!-- <div class="incoming message">
+            <h4 class="user-name">Rahul</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              reiciendis? Deleniti minus animi eius. Accusantium id omnis quam
+              unde enim?
+            </p>
+          </div>
+          <div class="outgoing message">
+            <h4 class="user-name">Rahul</h4>
+            <p>
+              Lorem ipsum dolor, 
+            </p>
+          </div> -->
+        </div>
+      </div>
+
+      <form class="text-container" id="form">
+        <div class="spacer">
+          <textarea id="textarea" placeholder="type your message"></textarea>
+          <button type="submit" class="send-msg" id="button">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script>
+  </body>
+</html>
